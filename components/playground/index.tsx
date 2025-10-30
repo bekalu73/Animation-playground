@@ -7,6 +7,8 @@ import AboutHorizontal from "./horizontal-scroll";
 import Inertia from "./inertia";
 import PillNav from "./pillNav";
 import InfiniteScroll from "./infinite-scroll";
+import CustomCursor from "./cursor";
+import LogoHoverAnimation from "./logo-hover";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -21,6 +23,9 @@ const Playground = () => {
       <Inertia />
       <PillNav />
       <InfiniteScroll />
+      <CustomCursor />
+      <div className="h-dvh"></div>
+      <LogoHoverAnimation />
     </>
   );
 };
