@@ -6,6 +6,7 @@ import About from "./aboutVertical";
 import AboutHorizontal from "./horizontal-scroll";
 import Inertia from "./inertia";
 import PillNav from "./pillNav";
+import InfiniteScroll from "./infinite-scroll";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -19,6 +20,7 @@ const Playground = () => {
       <AboutHorizontal />
       <Inertia />
       <PillNav />
+      <InfiniteScroll />
     </>
   );
 };
