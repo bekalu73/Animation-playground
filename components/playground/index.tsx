@@ -5,6 +5,7 @@ import ServicesSection from "./serivice";
 import About from "./aboutVertical";
 import AboutHorizontal from "./horizontal-scroll";
 import Inertia from "./inertia";
+import PillNav from "./pillNav";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -17,6 +18,7 @@ const Playground = () => {
       {/* <About /> */}
       <AboutHorizontal />
       <Inertia />
+      <PillNav />
     </>
   );
 };
