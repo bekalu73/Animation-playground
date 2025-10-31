@@ -9,6 +9,10 @@ import PillNav from "./pillNav";
 import InfiniteScroll from "./infinite-scroll";
 import CustomCursor from "./cursor";
 import LogoHoverAnimation from "./logo-hover";
+import StackedScrollSections from "./stack-scroll";
+import Scroll from "./scroll";
+import ScrollListAnimation from "./ScrollListAnimation";
+import Text from "./text";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -26,6 +30,10 @@ const Playground = () => {
       <CustomCursor />
       <div className="h-dvh"></div>
       <LogoHoverAnimation />
+      {/* <StackedScrollSections /> */}
+      <Scroll />
+      <ScrollListAnimation />
+      <Text />
     </>
   );
 };
