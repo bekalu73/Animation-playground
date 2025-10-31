@@ -2,6 +2,7 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,6 +52,7 @@ const items: Item[] = [
 export default function ScrollListAnimation() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const listRef = useRef<HTMLDivElement | null>(null);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [images, setImages] = useState<string[]>([]);
 
@@ -68,7 +70,7 @@ export default function ScrollListAnimation() {
     setImages(industryImages);
   }, []);
 
-  useEffect(() => {
+  useGSAP(() => {
     const container = containerRef.current;
     const listItems = listRef.current?.querySelectorAll(".list-item");
 
